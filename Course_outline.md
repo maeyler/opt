@@ -1,22 +1,23 @@
-﻿## Course Outline
+﻿## IE 4095
 
-<ol>
-<li> Numbers and Strings
-<li> Arrays and Functions	
-<li> Objects, Maps, Inspector
-<li> Importance of recursive algorithms
-<li> Partition problem -- NP-completeness
-<li> Implementation of graph data
-<li> Graph algorithms -- MST
-<li> Midterm exam
-<li> Inheritance; random numbers
-<li> Importance of Heuristics
-<li> Genetic algorithms
-<li> Mutation, crossover, eliminate
-<li> Simulated annealing
-<li> Other approximate algorithms
-<li> Final exam
-</ol>
+**Course Outline**
+
+1. [Numbers and Strings](https://maeyler.github.io/opt/work/First%20Week)
+2. Arrays and Functions
+3. Objects, Maps, Classes
+4. Partition problem -- Recursive solution
+5. Partition problem -- Efficient solution
+6. Implementation of graph data
+7. Graph algorithms -- Min Spanning Tree
+8. Midterm exam
+9. Inheritance; Random numbers
+10. Importance of Heuristics
+11. Simulated annealing
+12. Genetic algorithms
+13. Mutation, crossover, eliminate
+14. Other approximate algorithms
+15. Final exam
+
 
 **Links**
 
