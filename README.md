@@ -4,7 +4,7 @@
 
 [Mail group](https://groups.google.com/forum/#!forum/opt-alg/join): for communication and assignments
 
-[Repository](https://github.com/maeyler/305/): weekly work & notes
+[Repository](https://github.com/maeyler/opt/): weekly work & notes
 
 [Examples](https://maeyler.github.io/JS/): sample JavaScript pages
 
