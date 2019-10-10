@@ -3,21 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="https://maeyler.github.io/favicon.ico">
     <title>Poisson Probabilities</title>
 
   <style>
     body { max-width: 440px; }
     pre  { overflow-x: auto; }
     input { width: 50px }
-    table { border-collapse: collapse; }
-    th { color: blue; padding: 5px 5px; }
-    td { 
-        border: 1px solid blue; 
-        padding: 5px 5px; 
-        text-align: center; 
-        position: relative;
-    }
   </style>
 </head>
 
@@ -30,7 +21,6 @@ x = <input type=number id=ex value=0 onChange="calculate()">
 &emsp;
 <span id=res></span>
 <pre id=out><b>Table</b></pre>
-<table id=tab></table>
 
 <hr />
 <b>Sample code</b>
@@ -56,28 +46,23 @@ function calculate() {
     let λ = Number(lam.value)
     res.innerText = "P(x, λ) = "+poisson(x, λ)
 }
-function doTable(header, oneLine) {
+function doTable() {
     const L = [0.5, 1, 1.5, 2, 2.5, 3]
-    let a = L.map(λ => 'λ='+λ)
+    let a = L.map((λ) => 'λ='+λ)
     let str = header(a)
     for (let x=0; x<=8; x++) { 
-       let a = L.map(λ => poisson(x, λ))
+       let a = L.map((λ) => poisson(x, λ))
        str += oneLine(a, x)
     }
     return str
 }
-let header1  = (a) => '      '+ a.join('   ')  //pre
-let oneLine1 = (a, x) => '\nx='+x+'  '+ a.join(' ')
-let header2  = (a) => '<tr><th></th>' //table
-    +'<th>'+a.join('</th><th>')+'</th></tr>'
-let oneLine2 = (a, x) => '<tr><th>x='+x+'</th>'
-    +'<td>'+a.join('</td><td>')+'</td></tr>'
+let header  = (a) => '      '+ a.join('   ')  //pre
+let oneLine = (a, x) => '\nx='+x+'  '+ a.join(' ')
     
     title.innerText = document.title
     sample.innerText = poisson+'\n'+doTable
     calculate()
-    out.innerText = doTable(header1, oneLine1)
-    tab.innerHTML = doTable(header2, oneLine2)
+    out.innerText = doTable()
 </script>
 
 </body>
